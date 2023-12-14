@@ -29,7 +29,7 @@
       <div class="row" id="desc">
         <div class="z-index-1 col-lg-8 mb-5 pe-lg-5">
           <div class="mb-4 text-start">
-            <img src="{{-- (Storage::exists($package->img)) ? asset('storage/' . $package->img) : asset('storage/upload/package/other.jpg') --}}{{ asset('storage/public/upload/AjE7Yq00Xx9i6fbfQAncpqA22MxIllxI91lxB9uo.jpg') }}" class="shadow-sm my-img my-2 rounded-1" alt="{{ $package->title }}">
+            <img src="{{ ($package->img) ? asset('storage/' . $package->img) : asset('storage/upload/package/other.jpg') }}" class="shadow-sm my-img my-2 rounded-1" alt="{{ $package->title }}">
             <div class="my-4 my-lg-6">
               <div class="d-flex mb-1 align-items-start">
                 <img src="{{ asset('assets/img/dest/duration.png') }}" style="margin-right: 14px" width="20" alt="{{ mine()['title'] }}" />

@@ -39,7 +39,7 @@
           <div class="swiper-wrapper my-2 mb-5">
             @foreach ($category as $item)
               <div class="swiper-slide">
-                <img src="{{ (Storage::exists($item->img)) ? asset('storage/' . $item->img) : asset('storage/upload/category/other.jpg') }}" class="shadow-sm my-img rounded-1" alt="{{ $item->title }}">
+                <img src="{{ ($item) ? asset('storage/' . $item->img) : asset('storage/upload/category/other.jpg') }}" class="shadow-sm my-img rounded-1" alt="{{ $item->title }}">
                 <h3>
                   <a href="{{ route('single_category' , $item->slug ) }}" class="fs--1 stretched-link line-3 link-primary text-decoration-underline">{{ $item->title }} 
                   </a>
