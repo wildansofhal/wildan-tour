@@ -83,7 +83,7 @@
                 <div class="p-3 mb-4 shadow-sm my-rounded">
                   <div class="card flex-row flex-md-column flex-lg-row">
                     <div class="col-4 col-md-12 col-lg-4">
-                      <img src="{{ (Storage::exists($item->img)) ? asset('storage/' . $item->img) : asset('storage/upload/package/other.jpg') }}" class="my-rounded my-img" alt="{{ $item->title }}">
+                      <img src="{{ ($item->img) ? asset('storage/' . $item->img) : asset('storage/upload/package/other.jpg') }}" class="my-rounded my-img" alt="{{ $item->title }}">
                     </div>
                     <div class="card-body pt-0 pt-md-3 pt-lg-0 pe-0 pe-md-3 pe-lg-0 pb-0 d-flex justify-content-between flex-column">
                       <h5 class="card-title fs--1 line-1 mb-0 link-primary fw-medium">{{ $item->title }}</h5>
@@ -128,7 +128,7 @@
                 <div class="p-3 mb-4 shadow-sm my-rounded">
                   <div class="card flex-row flex-md-column flex-lg-row">
                     <div class="col-4 col-md-12 col-lg-4">
-                      <img src="{{ (Storage::exists($item->img)) ? asset('storage/' . $item->img) : asset('storage/upload/package/other.jpg') }}" class="my-rounded my-img" alt="{{ $item->title }}">
+                      <img src="{{ ($item->img) ? asset('storage/' . $item->img) : asset('storage/upload/package/other.jpg') }}" class="my-rounded my-img" alt="{{ $item->title }}">
                     </div>
                     <div class="card-body pt-0 pt-md-3 pt-lg-0 pe-0 pe-md-3 pe-lg-0 pb-0 d-flex justify-content-between flex-column">
                       <h5 class="card-title fs--1 line-1 mb-0 link-primary fw-medium">{{ $item->title }}</h5>
