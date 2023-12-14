@@ -114,7 +114,7 @@
         @if ($package->count() > 0)
           @foreach ($package as $item)
             <div class="col-12 col-md-6 col-xl-4 mb-4 position-relative">
-              <div class="card h-100 overflow-hidden shadow-lg"> <img class="card-img-top my-img" src="{{ (Storage::exists($item->img)) ? asset('storage/' . $item->img) : asset('storage/upload/package/other.jpg') }}" alt="{{ $item->title }}" />
+              <div class="card h-100 overflow-hidden shadow-lg"> <img class="card-img-top my-img" src="{{ ($item->img) ? asset('storage/' . $item->img) : asset('storage/upload/package/other.jpg') }}" alt="{{ $item->title }}" />
                 <div class="card-body d-flex flex-column justify-content-between py-4 px-3">
                   <div class="d-flex justify-content-between mb-1">
                     <h3 class="text-secondary fw-medium justify-content-between gap-2 d-flex w-100">
