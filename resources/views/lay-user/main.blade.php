@@ -114,7 +114,7 @@
     
       <div class="py-5 text-center">
         <p class="mb-0 text-secondary fs--1 fw-medium">© Copyright <a href="/">Wildan Tour</a>  {{ Date('Y') }}</p>
-        <p class="mb-0 text-secondary fs--1 fw-medium">Design By <a href="https://www.dion-zebua.my.id" class="text-success">Dion</a> </p>
+        <p class="mb-0 text-secondary fs--1 fw-medium">Design By <a href="https://wildansofhal.my.id" class="text-success">Wildan Sophal Jamil</a> </p>
       </div>
     </main>
     <!-- ===============================================-->
