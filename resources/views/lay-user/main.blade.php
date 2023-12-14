@@ -3,6 +3,7 @@
 <html lang="en">
 
   <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Wildan Tour</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
